@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+:root{
+    --color-primario:#000000;
+    --color-secundario: #7fc797;
+    --color-teciario: #00bbff;
+    --color-cuatro: #6a00f5;
+    --color-hover: #3c5e47;
+
+    --fuente-principal: "New Amsterdam", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--color-primario);
+    border: var(--color-teciario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+    
+}
+
+.header_menu{
+    display: flex;
+    gap: 80px
+
+}
+
+.header_menu_link{
+    font-family: var(--fuente-principal);
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.presentacion_titulo {
+    color: var(--color-teciario);
+    font-size: 2.5rem;
+    font-family: var(--fuente-principal);
+}
+.sobre_mi_titulo {
+    display: flex;
+    color: var(--color-teciario);
+    font-size: 2.5rem;
+    font-family: var(--fuente-principal);
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 4% 15%;
+    justify-content: space-between;
+    gap:82px;
+    
+}
+
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_texto{
+    font-size: 1.5rem;
+}
+
+.presentacion_botones{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentacion_enlaces_link{
+    width: 50%;
+    background-color: var(--color-primario);
+    text-align: center;
+    padding: 21.5px;
+    border-radius: 8px;
+    font-family: var(--fuente-principal);
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-teciario);
+    border: 5px solid var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.remarcado {
+    color: var(--color-cuatro);
+}
+
+.presentacion_enlaces_subtitulo {
+    font-family: var(--fuente-principal);
+    font-size: 1.8rem;
+
+}
+
+.presentacion_enlaces_link:hover {
+    background-color: var(--color-hover);
+}
+
+.presentacion_imagen{
+    width: 50%;
+}
+
+.footer {
+    background-color: var(--color-secundario);
+    padding: 1.5rem;
+}
+
+.footer_texto {
+    display: flex;
+    justify-content: center;
+    color: var(--color-primario);
+    font-size: 1.8rem;
+    font-family: var(--fuente-principal);
+}
+
+@media (max-width: 1200px){
+
+    .header{padding: 5% 10% 0% 10%
+
+    }
+
+    .header_menu{
+        justify-content: center;
+    
+    }
+    .presentacion{
+        flex-direction: column-reverse;   
+        padding: 5%;    
+    }
+
+    .sobre_mi_titulo{
+        justify-content: center;
+    }
+    
+    .presentacion_imagen{
+        width: 70%;
+    }
+
+    .presentacion_contenido{
+        width: auto;
+    }
+
+
+    
+
+}
